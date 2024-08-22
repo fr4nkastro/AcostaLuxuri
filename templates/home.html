@@ -74,14 +74,14 @@
     .btn-danger:hover {
       background-color: #c0392b; /* Color rojo oscuro al pasar el cursor */
     }
-    
-    .btn-info {
-      background-color: #1e90ff; /* Color azul para el botón de favoritos */
-      border-color: #1e90ff;
+
+    .btn-success {
+      background-color: #27ae60; /* Color verde para el botón de añadir a favoritos */
+      border-color: #27ae60;
     }
     
-    .btn-info:hover {
-      background-color: #187bcd; /* Color azul oscuro al pasar el cursor */
+    .btn-success:hover {
+      background-color: #229954; /* Color verde oscuro al pasar el cursor */
     }
   </style>
 </head>
@@ -152,8 +152,8 @@
               </form>
               <form action="/accesorio/favoritos" method="post" style="display:inline;">
                 {% csrf_token %}
-                <input type="hidden" value="{{ x.codigo }}" name="codigo">
-                <input type="submit" value="Favoritos" class="btn btn-info btn-sm">
+                <input type="hidden" value="{{ x.codigo}}" name="codigo">
+                <input type="submit" value="Añadir a Favoritos" class="btn btn-success btn-sm">
               </form>
             </td>
           </tr>

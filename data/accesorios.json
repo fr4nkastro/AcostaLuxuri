@@ -16,5 +16,17 @@
         "nombre": "Arete",
         "descripcion": "Acero",
         "precio": "$300"
+    },
+    {
+        "codigo": "11101",
+        "nombre": "Cadenita",
+        "descripcion": "Acero Inox",
+        "precio": "123"
+    },
+    {
+        "codigo": "",
+        "nombre": "",
+        "descripcion": "",
+        "precio": ""
     }
 ]
