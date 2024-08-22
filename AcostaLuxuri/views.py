@@ -49,7 +49,7 @@ def update_accesorio(request):
         return redirect("/accesorio/edit?codigo=" + codigo)
     
 def remove_accesorio(request):
-    codigo = request.GET['codigo']
+    codigo = request.POST['codigo']
     libAccesorio = LibAccesorio()
     accesorio = libAccesorio.get_accesorios_by_codigo(codigo)
     return render(request, "remove.html", {'accesorio': accesorio})
