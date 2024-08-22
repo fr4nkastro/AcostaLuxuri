@@ -74,6 +74,15 @@
     .btn-danger:hover {
       background-color: #c0392b; /* Color rojo oscuro al pasar el cursor */
     }
+    
+    .btn-info {
+      background-color: #1e90ff; /* Color azul para el botón de favoritos */
+      border-color: #1e90ff;
+    }
+    
+    .btn-info:hover {
+      background-color: #187bcd; /* Color azul oscuro al pasar el cursor */
+    }
   </style>
 </head>
 
@@ -136,10 +145,15 @@
                 <input type="hidden" value="{{ x.codigo }}" name="codigo">
                 <input type="submit" value="Editar" class="btn btn-warning btn-sm">
               </form>
-              <form action="/accesorio/remove" method="post" style="display:inline;">
+              <form action="/accesorio/remove/" method="post" style="display:inline;">
                 {% csrf_token %}
                 <input type="hidden" value="{{ x.codigo }}" name="codigo">
                 <input type="submit" value="Eliminar" class="btn btn-danger btn-sm">
+              </form>
+              <form action="/accesorio/favoritos" method="post" style="display:inline;">
+                {% csrf_token %}
+                <input type="hidden" value="{{ x.codigo }}" name="codigo">
+                <input type="submit" value="Favoritos" class="btn btn-info btn-sm">
               </form>
             </td>
           </tr>
