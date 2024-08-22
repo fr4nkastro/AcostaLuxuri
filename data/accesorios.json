@@ -1,0 +1,20 @@
+[
+    {
+        "codigo": "123",
+        "nombre": "Anillo",
+        "descripcion": "Cobre",
+        "precio": "$1000"
+    },
+    {
+        "codigo": "456",
+        "nombre": "Pulsera",
+        "descripcion": "Plata",
+        "precio": "$500"
+    },
+    {
+        "codigo": "789",
+        "nombre": "Arete",
+        "descripcion": "Acero",
+        "precio": "$300"
+    }
+]
